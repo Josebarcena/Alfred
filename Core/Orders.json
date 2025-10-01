@@ -1,0 +1,77 @@
+{
+  "chrome": {
+    "description": "Controla Google Chrome mediante Playwright",
+    "script": "Core/Orders/Chrome.py",
+    "commands": {
+      "busca": {
+        "args": ["busca", "<query>"],
+        "description": "Busca en Google la consulta dada"
+      },
+      "abre": {
+        "args": ["abre", "<url>"],
+        "description": "Abre una URL en una nueva pestaña"
+      },
+      "selecciona": {
+        "args": ["selecciona", "<index>"],
+        "description": "Selecciona un resultado de búsqueda por índice"
+      },
+      "cierra": {
+        "args": ["cierra"],
+        "description": "Cierra todas las pestañas de Chrome"
+      }
+    }
+  },
+
+  "files": {
+    "description": "Busca y abre archivos en el sistema",
+    "script": "Core/Orders/Files.py",
+    "commands": {
+      "busca": {
+        "args": ["busca", "<unidad>", "<archivo>"],
+        "description": "Busca un archivo en una unidad (ej: C chrome.exe)"
+      },
+      "abre": {
+        "args": ["abre", "<unidad>", "<archivo>"],
+        "description": "Abre un archivo encontrado en la unidad"
+      }
+    }
+  },
+
+  "apps": {
+    "description": "Mueve ventanas a distintas posiciones en monitores",
+    "script": "Core/Orders/Mapp.py",
+    "commands": {
+      "mueve": {
+        "args": ["mueve", "<titulo_regex>", "<monitor>", "<modo>", "[grid]", "[indice]"],
+        "description": "Mueve una ventana cuyo título coincide a un monitor y posición"
+      }
+    }
+  },
+
+  "spotify": {
+    "description": "Controla Spotify en el dispositivo activo",
+    "script": "Core/Orders/Spotify.py",
+    "commands": {
+      "devices": {
+        "args": ["devices"],
+        "description": "Lista dispositivos disponibles"
+      },
+      "device": {
+        "args": ["device", "<prefer_device>"],
+        "description": "Cambia el dispositivo de reproducción (valores típicos: computer | smartphone | nombre del dispositivo)"
+      },
+      "play": {
+        "args": ["play", "<cancion>", "[prefer_device]"],
+        "description": "Reproduce una canción en Spotify"
+      },
+      "pause": {
+        "args": ["pause", "[prefer_device]"],
+        "description": "Pausa la canción en Spotify"
+      },
+      "next": {
+        "args": ["next", "[prefer_device]"],
+        "description": "Pasa a la siguiente canción"
+      }
+      }
+  }  
+}

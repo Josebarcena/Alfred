@@ -1,0 +1,52 @@
+{
+  "chrome.abre": [
+    {
+      "pattern": "abre *",
+      "args_map": {
+        "url": "$1"
+      },
+      "weight": 1.0,
+      "id": "252c1e39f40e4ead9ee2533dcdd3dc25"
+    },
+    {
+      "pattern": "open *",
+      "args_map": {
+        "url": "$1"
+      },
+      "weight": 0.9,
+      "id": "3464614aeb454d1bba5b38fdafce920c"
+    }
+  ],
+  "chrome.busca": [
+    {
+      "pattern": "busca *",
+      "args_map": {
+        "query": "$1"
+      },
+      "weight": 1.0,
+      "id": "3d8878f468294898bbf182dc7b13139d"
+    }
+  ],
+  "spotify.next": [
+    {
+      "pattern": "siguiente spotify",
+      "args_map": {},
+      "weight": 1.2,
+      "id": "281c8ef31bee4d3dadd747bfb93776e6"
+    }
+  ],
+  "spotify.play": [
+    {
+      "pattern": "pon * en el *",
+      "args_map": { "cancion": "$1", "prefer_device": "$2" },
+      "weight": 2.0,
+      "id": "alias-pon-en"
+    },
+    {
+      "pattern": "pon *",
+      "args_map": { "cancion": "$1" },
+      "weight": 1.0,
+      "id": "alias-pon"
+    }
+  ]
+}

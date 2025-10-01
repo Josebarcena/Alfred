@@ -1,0 +1,43 @@
+{
+    "AGENT_BACKEND": "nl",
+    "OLLAMA_URL": "http://localhost:11434",
+    "OLLAMA_MODEL": "llama3.1:8b-instruct-q4_K_M",
+    "OLLAMA_MODEL_CHAT": "llama3.1:8b-instruct-q4_K_M",
+
+    "ROUTING_RULES": "C:\\Alfred\\LLM\\routing_rules.yaml",
+    "ROUTER_ALIASES": "C:\\Alfred\\LLM\\arg_aliases.yaml",
+
+    "SOFTFILL_DEBUG": "1",
+
+    "NATURAL_ACK": "1",
+    "NATURAL_RESULT": "1",
+    "PRINT_RAW_RESULT": "0",
+    "NATURAL_STYLE": "concise",
+
+    "ORDER_REPAIR": "1",
+    "ORDER_REPAIR_TRIES": "1",
+    "ORDER_REPAIR_DEBUG": "0",
+
+    "QA_ENABLE": "1",
+    "QA_WEB": "1",
+    "QA_WIKI_LANG": "es",
+    "QA_MAX_CHARS": "800",
+
+    "RAW_MODE": "1",
+    "CHAT_PERSONA": "butler",
+    "CHAT_TEMP": "0.8",
+    "CHAT_TOP_P": "0.9",
+    "CHAT_REPEAT_PENALTY": "1.05",
+    "MAX_TOKENS": "512",
+    "NUM_CTX": "8192",
+
+    "CHAT_GUARD": "1",
+    "AFFECTION_MODE": "1",
+    "CHAT_CTX_TURNS": "8",                
+    "CHAT_CTX_USE_SUMMARY": "1",            
+    "CHAT_CTX_SUMMARY_MAX": "800",         
+    "CHAT_CTX_REFRESH_EVERY":"10",        
+    "OLLAMA_MODEL_NL" : "llama3.1:8b-instruct-q4_K_M",
+    "OLLAMA_MODEL_QA": "llama3.1:8b-instruct-q5_K_M",
+    "OLLAMA_MODEL_REPAIR": "mixtral:8x7b-instruct-q4_K_M"
+}

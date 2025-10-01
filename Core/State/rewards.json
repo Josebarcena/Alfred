@@ -1,0 +1,33 @@
+{
+  "chrome:cierra": {
+    "good": 0,
+    "bad": 1,
+    "last": {},
+    "notes": [
+      {
+        "ts": 1756341904,
+        "ok": false,
+        "note": "smalltalk"
+      }
+    ]
+  },
+  "chrome:abre": {
+    "good": 0,
+    "bad": 2,
+    "last": {
+      "url": "https://www.youtube.com"
+    },
+    "notes": [
+      {
+        "ts": 1756375688,
+        "ok": false,
+        "note": "1"
+      },
+      {
+        "ts": 1756375723,
+        "ok": false,
+        "note": "1"
+      }
+    ]
+  }
+}
